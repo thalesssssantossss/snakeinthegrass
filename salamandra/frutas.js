@@ -43,3 +43,28 @@ class getFrutas {
         return this.frutas;
     }   
 module.exports = getFrutas;
+
+let frutas = new getFrutas();
+console.log(frutasInstance.getFrutas());
+
+function getRandomFruta() {
+    const frutasInstance = new getFrutas();
+    const frutasArray = frutasInstance.getFrutas();
+    const randomIndex = Math.floor(Math.random() * frutasArray.length);
+    return frutasArray[randomIndex];
+}
+
+    return frutasArray;
+module.exports = getFrutas;
+
+class getFrutas {
+    frutas = ['manzana', 'banana', 'cereza', 'durazno', 'uva']
+    frutas;
+}
+    constructor(); {
+        this.frutas = this.frutas;
+    }   
+    getFrutas(); {
+        return this.frutas;
+    }   
+module.exports = getFrutas;
